@@ -1,0 +1,146 @@
+.navbar {
+    background-color: black;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.nav_icon {
+    font-size: 18px; 
+    margin-top: 4px;
+    margin-right: 6px;
+}
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em; 
+    font-weight: bold;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links_mobile {
+    list-style: none;
+    display: none;
+}
+
+.nav-links li,
+.nav-links_mobile li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+
+.nav-links a,
+.nav-links_mobile a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover,
+.nav-links_mobile a:hover {
+    color: #66D9EF; 
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .logo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 15px;
+        text-align: center;
+        z-index: 1;
+
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        margin-top: 10px; 
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links a {
+        color: white;
+    }
+
+    .nav_icon {
+        font-size: 30px; 
+    }
+
+    .nav-links_mobile {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        margin-top: 5px;
+
+    }
+
+    .nav-links_mobile li {
+        margin: 0;
+    }
+
+    .nav-links_mobile a {
+        color: white;
+    }
+
+    #nav-toggle {
+        display: none; 
+    }
+
+    #nav-toggle-label {
+        cursor: pointer;
+        color: white;
+        margin-top: 10px;
+        display: block;
+        position: fixed; 
+        top: 10px;
+        right: 10px;
+        font-size: 30px; 
+    }
+
+    #nav-toggle:checked + .nav-links,
+    #nav-toggle:checked + .nav-links_mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
