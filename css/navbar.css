@@ -1,5 +1,6 @@
 .navbar {
-    background-color: black;
+    background-color: #9B5CCC;
+    
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -46,7 +47,7 @@
 
 .nav-links a:hover,
 .nav-links_mobile a:hover {
-    color: #66D9EF; 
+    color: #fecb00; 
 }
 
 
