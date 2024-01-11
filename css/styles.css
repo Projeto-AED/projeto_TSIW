@@ -1,12 +1,43 @@
 body {
     margin: 0;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'IBM Plex Mono', monospace, 'Inter', sans-serif, 'Playfair Display', serif;
     font-family: 'Inter', sans-serif;
     font-family: 'Playfair Display', serif;
-    background-color: #282725;
+    background-color: #393e41;
+    color: #fff;
+}
+#imagem_carrossel{
+    width: 100%;
+    max-width: 300px;
+    height: 400px;
+    margin-left: 50px;
+    margin-right: 0;
+}
+.trailer{
+    max-width: 700px;
+    margin-right: 100px;
+    display: block;
+
 }
 
+.filmes_populares {
+    padding: 20px;
+}
 
+.filme {
+    margin-bottom: 20px;
+}
 
+.filme img {
+    width: 300px ;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.filme h3 {
+    margin-top: 10px;
+    text-align: center;
+}
 
 
