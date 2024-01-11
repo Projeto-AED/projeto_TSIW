@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.main {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    left: 100px;
+}
+
+.main img {
+    height: 350px;
+    width: 250px;
+    margin-right: 20px; 
+}
+
+
+.main .aspects {
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: auto;
+}
+
+.main .aspects .title {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    margin-right: 30px;
+}
+
+.main .aspects .title h1,
+.main .aspects .title h2,
+.main .aspects .title h3 {
+    margin: 5px 0; 
+}
+
+.main .aspects p,
+.main .aspects p2 {
+    margin: 10px 0; 
+    text-align: justify; 
+}
+
