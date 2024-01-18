@@ -2,6 +2,8 @@ body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
+    height: 1500px;
+    background-color: #1c1c1c;
 }
 
 header {
@@ -70,12 +72,12 @@ main p {
 }
 
 .dropdown {
-    display: inline-block;
-    margin-right: 10px; /* Add some spacing between buttons */
+    display: flex;
+    margin-top: 10px; 
   }
 
   .dropdown button {
-    background-color: #8e44ad; /* Purple background color */
+    background-color: #8e44ad; 
     color: #fff;
     padding: 10px;
     border: none;
