@@ -14,12 +14,15 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>CINEPHILE</title>
 </head>
 <body>
     <div class="navbar">
-        <div class="logo"><a href="index.html"><img src="" alt="">CINEPHILE</a></div>
+        <div class="logo">
+            <i class="bx bxs-movie"></i>CINEPHILE
+        </div>
         <ul class="nav-links">
             <li><a href="index.html"><i class='bx bx-home nav_icon'></i>Início</a></li>
             <li><a href=""><i class='bx bx-user nav_icon'></i>Login/Criar Conta</a></li>
@@ -28,11 +31,11 @@
             <li><a href=""><i class='bx bx-star nav_icon'></i>Favoritos</a></li>
         </ul>
         <ul class="nav-links_mobile">
-            <li><a href="index.html"><i class='bx bx-home nav_icon'></i>Início</a></li>
-            <li><a href=""><i class='bx bx-user nav_icon'></i>Login/Criar Conta</a></li>
-            <li><a href=""><i class='bx bx-film nav_icon'></i>Filmes</a></li>
-            <li><a href=""><i class='bx bx-tv nav_icon'></i>Series</a></li>
-            <li><a href=""><i class='bx bx-star nav_icon'></i>Favoritos</a></li>
+            <li><a href="index.html"><i class='bx bx-home nav_icon'></i></a></li>
+            <li><a href=""><i class='bx bx-user nav_icon'></i></a></li>
+            <li><a href=""><i class='bx bx-film nav_icon'></i></a></li>
+            <li><a href=""><i class='bx bx-tv nav_icon'></i></a></li>
+            <li><a href=""><i class='bx bx-star nav_icon'></i></a></li>
         </ul>
     </div>
     <section class="conteudo_principal">
@@ -72,52 +75,96 @@
               <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <div class="filmes_populares">
-            <h2>Filmes Mais Populares</h2>
-    
-            <div class="d-flex flex-row">
-                <div class="col-md-2">
-                    <div class="filme">
-                        <img src="./assets/images/allaboutlilychouchou.jpg" alt="Filme 1">
-                        <h3>Filme 1</h3>
+        <h2> Filmes Mais Populares</h2>
+        <div class="d-flex flex-row filme-carousel">
+            
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="filme">
+                            <img src="./assets/images/allaboutlilychouchou.jpg" alt="Filme 1">
+                            <h3>Filme 1</h3>
+                        </div>
                     </div>
-                </div>
-    
-                <div class="col-md-2">
-                    <div class="filme">
-                        <img src="./assets/images/aprilstory.jpg" alt="Filme 2">
-                        <h3>Filme 2</h3>
+                    <div class="swiper-slide">
+                        <div class="filme">
+                            <img src="./assets/images/aprilstory.jpg" alt="Filme 2">
+                            <h3>Filme 2</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="filme">
-                        <img src="./assets/images/beforesunrise.jpg" alt="Filme 2">
-                        <h3>Filme 3</h3>
+                    <div class="swiper-slide">
+                        <div class="filme">
+                            <img src="./assets/images/beforesunrise.jpg" alt="Filme 3">
+                            <h3>Filme 3</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="filme">
-                        <img src="./assets/images/bluevelvet.jpg" alt="Filme 2">
-                        <h3>Filme 4</h3>
+                    <div class="swiper-slide">
+                        <div class="filme">
+                            <img src="./assets/images/bluevelvet.jpg" alt="Filme 4">
+                            <h3>Filme 4</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="filme">
-                        <img src="./assets/images/buffalo66.jpg" alt="Filme 2">
-                        <h3>Filme 5</h3>
+                    <div class="swiper-slide">
+                        <div class="filme">
+                            <img src="./assets/images/buffalo66.jpg" alt="Filme 5">
+                            <h3>Filme 5</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="filme">
-                        <img src="./assets/images/get out.jpg" alt="Filme 2">
-                        <h3>Filme 5</h3>
+                    <div class="swiper-slide">
+                        <div class="filme">
+                            <img src="./assets/images/get out.jpg" alt="Filme 6">
+                            <h3>Filme 6</h3>
+                        </div>
                     </div>
-                </div>
-    
-    
+                    <div class="swiper-slide">
+                        <div class="filme">
+                            <img src="./assets/images/inception.jpg" alt="Filme 7">
+                            <h3>Filme 7</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="filme">
+                            <img src="./assets/images/lepetitsoldat.jpg" alt="Filme 8">
+                            <h3>Filme 8</h3>
+                        </div>
+                    </div>
+                    
+                </div>  
             </div>
         </div>
-
+        <div class="d-flex flex-row filme-carousel">
+            <h2>Próximas Estreias</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="filme">
+                            <img src="./assets/images/ms45.jpg" alt="Filme 1">
+                            <h3>Filme 1</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="filme">
+                            <img src="./assets/images/parasite.jpg" alt="Filme 2">
+                            <h3>Filme 2</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="filme">
+                            <img src="./assets/images/taxi driver.jpg" alt="Filme 3">
+                            <h3>Filme 3</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="filme">
+                            <img src="./assets/images/thirteen.jpg" alt="Filme 4">
+                            <h3>Filme 4</h3>
+                        </div>
+                    </div>
+                    
+                    
+                </div>  
+            </div>
+        </div>
         <div class="fuctions" id="services">
             <h1> Cinephile lets you</h1>
             <div class="fuctions_box">
@@ -203,7 +250,8 @@
             
     </section>
 
-    
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script></body>
+<script src="./js/index.js"></script>
 </html>

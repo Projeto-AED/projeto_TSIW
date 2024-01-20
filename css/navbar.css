@@ -1,11 +1,11 @@
 .navbar {
     background-color: #9B5CCC;
-    
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
+    margin-bottom: 1%;
 }
 .nav_icon {
     font-size: 18px; 
