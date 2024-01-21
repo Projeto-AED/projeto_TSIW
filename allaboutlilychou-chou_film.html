@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/film.css">
+    <link rel="stylesheet" href="js/film.js">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+        <i class="bx bxs-movie"></i>CINEPHILE
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html"><i class='bx bx-home nav_icon'></i>Início</a></li>
+        <li><a href=""><i class='bx bx-user nav_icon'></i>Login/Criar Conta</a></li>
+        <li><a href=""><i class='bx bx-film nav_icon'></i>Filmes</a></li>
+        <li><a href=""><i class='bx bx-tv nav_icon'></i>Series</a></li>
+        <li><a href=""><i class='bx bx-star nav_icon'></i>Favoritos</a></li>
+    </ul>
+    <ul class="nav-links_mobile">
+        <li><a href="index.html"><i class='bx bx-home nav_icon'></i></a></li>
+        <li><a href=""><i class='bx bx-user nav_icon'></i></a></li>
+        <li><a href=""><i class='bx bx-film nav_icon'></i></a></li>
+        <li><a href=""><i class='bx bx-tv nav_icon'></i></a></li>
+        <li><a href=""><i class='bx bx-star nav_icon'></i></a></li>
+    </ul>
+</div>
+    <div class="container movie-details left-box">
+      <div class="row">
+          <div class="card mb-3 film">
+            <div class="row g-0">
+                <div class="col-md-4">
+                        <img src="assets/images/allaboutlilychouchou.jpg"
+                        class="img-fluid rounded-start movie-img" alt="">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">All About Lily Chou-Chou</h5>
+                        <p class="card-text">Director:   Shunji Iwai</p>
+                        <p class="card-text">Charts the troubled teenage years of students Yūichi Hasumi and Shūsuke Hoshino, exploring the shifting and complex power dynamics of their relationship against the backdrop of Yūichi’s love for the dreamy and abstract music of fictional pop star Lily Chou-Chou.
+
+                        </p>
+                        <p class="card-text">Relece date: 2001</p>
+                        <p class="card-text">⭐8.8/10</p>
+                        <div class="review-section">
+                          <h2>Sua Avaliação:</h2>
+                          <div class="stars" id="star-rating">
+                              <span class="star" data-value="1">&#9733;</span>
+                              <span class="star" data-value="2">&#9733;</span>
+                              <span class="star" data-value="3">&#9733;</span>
+                              <span class="star" data-value="4">&#9733;</span>
+                              <span class="star" data-value="5">&#9733;</span>
+                          </div>
+                          <p id="selected-rating">Nenhuma avaliação selecionada.</p>
+                      </div>
+                        <button class="btn">Add Favourite</button>
+                    </div>
+                </div>
+            </div>
+            <h2>Cast:</h2>
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide ">
+                        <div class="filme">
+                            <img src="assets/images/hayato ichihara.jpg" alt="Filme 1" class="img-fluid">
+                            <h3>Hayato Ichihara</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="filme">
+                            <img src="assets/images/Shugo Oshinari.jpg" alt="Filme 2" class="img-fluid">
+                            <h3>Shugo Oshinari</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="filme">
+                            <img src="assets/images/Yu Aoi.jpg" alt="Filme 3" class="img-fluid">
+                            <h3>Yu Aoi</h3>
+                        </div>
+                    </div>
+                    
+                </div>  
+            
+            </div>
+        
+        </div>
+      </div>
+      <div class="reviewBottomSection">
+        <h1>Reviews Mais Revelantes</h1>
+        <div class="commentContainer">
+          <div class="eachComment">
+              <div class="fiveStars">
+                <i class="fa-solid fa-star rate"></i>
+                <i class="fa-solid fa-star rate"></i>
+                <i class="fa-solid fa-star rate"></i>
+                <i class="fa-solid fa-star rate"></i>
+                <i class="fa-solid fa-star rate"></i>
+                <i class="fa-solid fa-star rate"></i>
+                
+  
+              </div>
+              <div class="subject">great</div>
+              <div class="message">Me walking out of the record store w 5 lily chou-chou cds up my ass</div>
+              <div class="user">emy- 12 de Janeiro de 2024</div>
+          </div>
+
+
+          <div class="eachComment">
+              <div class="fiveStars">
+                <i class="fa-solid fa-star rate"></i>
+                <i class="fa-solid fa-star unrate"></i>
+                <i class="fa-solid fa-star unrate"></i>
+                <i class="fa-solid fa-star unrate"></i>
+                <i class="fa-solid fa-star unrate"></i>
+  
+              </div>
+              <div class="subject">Top</div>
+              <div class="message">Mudou a minha vida</div>
+              <div class="user"> josh - 12 de Janeiro de 2024</div>
+          </div>
+        
+          <div class="eachComment">
+              <div class="fiveStars">
+                <i class="fa-solid fa-star rate"></i>
+                <i class="fa-solid fa-star rate"></i>
+                <i class="fa-solid fa-star rate"></i>
+                <i class="fa-solid fa-star rate"></i>
+                <i class="fa-solid fa-star rate"></i>
+  
+              </div>
+              <div class="subject">memily</div>
+              <div class="message">my favorite commentary that I've read about this movie was from Rian Johnson who said "I love that if the movie Get Out existed in the world of Get Out, the parents would have told Chris how much they loved Get Out"</div>
+              <div class="user">Dave - 12 de Janeiro de 2024</div>
+          </div>
+        
+    </div>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./js/film.js"></script>
+</body>
+</html>
