@@ -443,67 +443,6 @@ button {
 
 }
 
-
-
-
-
-/* Estilos para a seção de funções do site */
-.fuctions {
-    width: 100%;
-    margin-top: 100px;
-    margin-left: 35px;
-    bottom: 0;
-}
-
-.fuctions h1 {
-    font-size: 35px;
-    display:flex ;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
-.fuctions .fuctions_box {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    align-self: center;
-    grid-gap: 15px;
-    width: 95%;
-}
-
-.fuctions .fuctions_box .fuctions_card {
-    width: 420px;
-    height: 200px;
-    text-align: center;
-    padding: 5px;
-    border: 1px solid gray;
-    display: flex;
-    justify-content: center;
-    background: #282725;
-    margin-left: 0px;
-    cursor: pointer;
-}
-
-.fuctions .fuctions_box .fuctions_card:hover {
-    background-color: #7ba098;
-}
-
-.fuctions .fuctions_box .fuctions_card i {
-    font-size: 50px;
-    margin-top: 50px;
-}
-
-.fuctions .fuctions_box .fuctions_card h3 {
-    margin-top: 40px;
-    font-size: 25px;
-    margin-left: 10px;
-}
-
-.fuctions .fuctions_box .fuctions_card .card_h3 {
-    margin-top: 50px;
-}
-
 /* Estilos para o rodapé */
 .container {
     max-width: 1170px;
