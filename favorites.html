@@ -45,6 +45,57 @@
         </ul>
     </div>
 
+    <div class="background-animations"></div>
+
+    <h1 id="favorite-movies-header" class="favorite-movies-header">OS SEUS FILMES FAVORITOS</h1>
+
+    <section class="favorite-movies-list">
+        <div class="favorite-movies-grid">
+            <div class="movie-card">
+                <div class="movie-info">
+                    <img src="assets/images/buffalo66.jpg" class="cover">
+                    <div class="details">
+                        <h3>Buffalo '66</h3>
+                        <p>Direção: Vincent Gallo</p>
+                        <p id="sinopse" class="sinopse">Sinopse: Billy Brown (Vincent Gallo) esteve preso durante 5 anos, mas seus pais acreditam que todo esse tempo ele esteve casado e bem sucedido. Quando Billy sai da prisão, ele se depara por um acaso com Layla (Christina Ricci), uma aluna de dança.</p>
+                        <p id="remainingSinopse" class="remaining-sinopse">Ele a sequestra para que eles possam ir na casa de seus pais continuar com a farsa do casamento. Layla percebe que os pais de Billy não dão a mínima para ele, e mal se lembram dele, e enquanto isso ela começa a se apaixonar pelo ex-presidiário.</p>
+                        <button id="showMoreBtn" class="show-more-btn" onclick="showMore(this)">Mostrar Mais...</button>
+                        <p>Rating: 7.4/10</p>
+                        <button class="remove-button"><i class="fas fa-star"></i>Remover dos Favoritos</i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="movie-info">
+                    <img src="assets/images/allaboutlilychouchou.jpg" class="cover">
+                    <div class="details">
+                        <h3>All About Lily Chou-Chou</h3>
+                        <p>Direção: Shunji Iwai</p>
+                        <p id="sinopse" class="sinopse">Sinopse: Lançado em 06 de Outubro de 2001, foi um dos filmes da sequência de acertos do diretor Shunji Iwai que emplacava vários sucessos desde sua estreia com Love Letter (1995) protagonizado pela idol pop Miho Nakayama.</p>
+                        <p id="remainingSinopse" class="remaining-sinopse">O roteiro de Lily Chou-Chou foi quase todo baseado em discussões de internautas sobre uma cantora anônima em um chat online chamado Lilyholic, criado pelo próprio Shunji Iwai. A cantora Salyu e o compositor Takeshi Kobayashi (grande colaborador de Iwai) deram vida a persona musical de Lily Chou-Chou.</p>
+                        <button id="showMoreBtn" class="show-more-btn" onclick="showMore(this)">Mostrar Mais...</button>
+                        <p>Rating: 7.5/10</p>
+                        <button class="remove-button"><i class="fas fa-star"></i>Remover dos Favoritos</i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="movie-info">
+                    <img src="assets/images/bluevelvet.jpg" class="cover">
+                    <div class="details">
+                        <h3>Blue Velvet</h3>
+                        <p>Direção: David Lynch</p>
+                        <p id="sinopse" class="sinopse">Sinopse: A cortina é pesada, o veludo é azul, dramático, organicamente sedutor – aí está Blue Velvet (Veludo Azul, 1986), de David Lynch, a ver-se como um filme-matéria, com muito corpo e muito inconsciente.</p>
+                        <p id="remainingSinopse" class="remaining-sinopse">A ferro e fogo, ardor e mistério, Blue Velvet marcou à época e sobrevive-lhe, podendo voltar-se a ele sempre, qual canto de sereia ou encanto de serpentes, que deixou um rasto no imaginário.</p>
+                        <button id="showMoreBtn" class="show-more-btn" onclick="showMore(this)">Mostrar Mais...</button>
+                        <p>Rating: 7.7/10</p>
+                        <button class="remove-button"><i class="fas fa-star"></i>Remover dos Favoritos</i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -83,5 +134,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <script src="./js/favorites.js"></script>
 </body>
 </html>
