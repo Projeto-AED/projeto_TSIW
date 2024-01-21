@@ -59,3 +59,43 @@ document.addEventListener("DOMContentLoaded", function () {
 
     createParticles();
 });
+
+function searchMovies() {
+    const searchInput = document.getElementById('searchInput').value.toLowerCase();
+    const movieCards = document.querySelectorAll('.movie-card');
+
+    movieCards.forEach(card => {
+        const movieTitle = card.querySelector('.movie-details h3').textContent.toLowerCase();
+
+        if (movieTitle.includes(searchInput)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+function filterMovies() {
+    const genreFilter = document.getElementById('genreFilter').value;
+    const ratingFilter = document.getElementById('ratingFilter').value;
+    const movieCards = document.querySelectorAll('.movie-card');
+
+    movieCards.forEach(card => {
+        const movieGenre = card.getAttribute('data-genre').toLowerCase();
+        const movieRating = parseFloat(card.getAttribute('data-rating'));
+
+        const genreMatch = (genreFilter === 'all' || movieGenre.includes(genreFilter));
+        const ratingMatch = (ratingFilter === 'all' || movieRating >= parseFloat(ratingFilter));
+
+        if (genreMatch && ratingMatch) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
+
+
+
+
+

@@ -45,76 +45,96 @@
     </div>
 
     <div class="background-animations"></div>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Pesquisar filmes..."> <button style ="background-color:#9B5CCC; "onclick="searchMovies()">Pesquisar</button>
+    </div>
+<div class="filter-container">
+    <label for="genreFilter">Gênero:</label>
+    <select id="genreFilter">
+        <option value="all">Todos</option>
+        <option value="action">Ação</option>
+        <option value="drama">Drama</option>
+        <option value="terror">Terror</option>
+
+    </select>
+
+    <label for="ratingFilter">Classificação:</label>
+    <select id="ratingFilter">
+        <option value="all">Todas as Classificações</option>
+        <option value="5">5 estrelas</option>
+        <option value="4">4 estrelas</option>
+    </select>
+    <button onclick="filterMovies()">Pesquisar</button>
+</div>
 
     <section class="movies-list" id="moviesList">
-        <!-- Movie cards with minimal content for now -->
-        <div class="movie-card"">
+        <div class="movie-card">
             <a href="getout_film.html"><img src="./assets/images/get out.jpg" alt=""></a>
-            <div class="movie-details">
+            <div class="movie-details" data-genre="terror" data-rating="4">
                 <h3>Get Out</h3>
                 <p>2017 | Rating: 7.8</p>
             </div>
         </div>
     
-        <div class="movie-card"">
+        <div class="movie-card">
             <a href="aprilstory_film.html"><img src="./assets/images/aprilstory.jpg" alt=""></a>
-            <div class="movie-details">
+            <div class="movie-details" data-genre="drama" data-rating="4">
                 <h3>April Story</h3>
                 <p>1998 | Rating: 7.1</p>
             </div>
         </div>
 
-        <div class="movie-card"">
+        <div class="movie-card">
             <a href="cars2_film.html"><img src="./assets/images/16560-cars-2-0-1000-0-1500-crop.jpg" alt=""></a>
-            <div class="movie-details">
+            <div class="movie-details" data-genre="drama" data-rating="4">
                 <h3>Cars 2</h3>
                 <p>2011 | Rating: 6.2</p>
             </div>
         </div>
     
-        <div class="movie-card"">
+        <div class="movie-card">
             <a href="beforesunrise_fil.html"><img src="./assets/images/beforesunrise.jpg" alt=""></a>
-            <div class="movie-details">
+            <div class="movie-details" data-genre="drama" data-rating="4">
                 <h3>Before Sunrise</h3>
                 <p>1995 | Rating: 8.1</p>
             </div>
         </div>
 
-        <div class="movie-card"">
+        <div class="movie-card">
             <a href="fightclub_film.html"><img src="./assets/images/fightclub.jpg" alt=""></a>
-            <div class="movie-details">
+            <div class="movie-details" data-genre="drama" data-rating="5">
                 <h3>Fight Club</h3>
                 <p>1999 | Rating: 8.8</p>
             </div>
         </div>
 
-        <div class="movie-card"">
+        <div class="movie-card">
             <a href="inception_film.html"><img src="./assets/images/inception.jpg" alt=""></a>
-            <div class="movie-details">
+            <div class="movie-details" data-genre="action" data-rating="5">
                 <h3>Inception</h3>
                 <p>2010 | Rating: 8.8</p>
             </div>
         </div>
 
-        <div class="movie-card"">
+        <div class="movie-card">
             <a href="allaboutlilychou-chou_film.html"><img src="./assets/images/allaboutlilychouchou.jpg" alt=""></a>
-            <div class="movie-details">
+            <div class="movie-details" data-genre="drama" data-rating="4">
                 <h3>All About Lily Chou-Chou</h3>
                 <p>2001 | Rating: 7.5</p>
             </div>
         </div>
 
-        <div class="movie-card"">
+        <div class="movie-card">
             <a href="bluevelvet_film.html"><img src="./assets/images/bluevelvet.jpg" alt=""></a>
-            <div class="movie-details">
+            <div class="movie-details" data-genre="drama" data-rating="4">
                 <h3>Blue Velvet</h3>
                 <p>1986 | Rating: 7.7</p>
             </div>
         </div>
 
-        <div class="movie-card"">
+        <div class="movie-card">
             <a href="buffalo66_film.html"><img src="./assets/images/buffalo66.jpg" alt=""></a>
-            <div class="movie-details">
+            <div class="movie-details" data-genre="drama" data-rating="4">
                 <h3>Buffalo '66</h3>
                 <p>1998 | Rating: 7.4</p>
             </div>

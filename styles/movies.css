@@ -6,6 +6,7 @@
 }
 
 .movie-card {
+    display: block;
     background-color: #282c2f;
     padding: 20px;
     border-radius: 8px;
@@ -14,7 +15,9 @@
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
-
+.movie-card[style="display: none;"] {
+    display: none;
+}
 .movie-card:hover {
     transform: scale(1.05);
 }
@@ -54,6 +57,65 @@
 
 .background-animations canvas {
     display: block;
+}
+
+.search-container,
+.filter-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter-container {
+    margin-left: 20px;
+}
+
+#ratingFilter, #genreFilter{
+    color: white;
+    background-color: #777777;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #9B5CCC;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+label {
+    margin-right: 10px;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.movie-card {
+    display: block;
+}
+
+.movie-card[style="display: none;"] {
+    display: none;
+}
+.filter-container button {
+    padding: 10px;
+    background-color: #9B5CCC;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
 }
 
 @media only screen and (max-width: 576px) {

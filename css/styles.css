@@ -570,7 +570,13 @@ button {
     color: #24262b;
     background-color: #ffffff;
 }
+.image-effect {
+    transition: transform 0.3s ease-in-out;
+}
 
+.image-effect:hover {
+    transform: scale(1.1);
+}
 /* Responsividade */
 @media (max-width: 1200px) {
     .col-md-2 {
