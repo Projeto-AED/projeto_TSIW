@@ -260,6 +260,7 @@ button {
 
 .top-rated .section-title {
     margin-bottom: 50px;
+    padding-top: 1%;
 }
 
 .top-rated .filter-list {
@@ -306,6 +307,11 @@ button {
 .movies-list {
     display: grid;
     gap: 50px;
+}
+
+.prox_estreias_header {
+    padding-left: 5%;
+    padding-top: 1%;
 }
 
 .movie-card {
