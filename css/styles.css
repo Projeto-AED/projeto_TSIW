@@ -457,7 +457,9 @@ button {
 
 .fuctions h1 {
     font-size: 35px;
-    margin-left: 55px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 40px;
 }
 
