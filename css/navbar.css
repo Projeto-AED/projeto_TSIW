@@ -1,4 +1,5 @@
 .navbar {
+    font-family: 'IBM Plex Mono', monospace, 'Inter', sans-serif, 'Playfair Display', serif;
     background-color: #9B5CCC;
     padding: 15px;
     display: flex;
