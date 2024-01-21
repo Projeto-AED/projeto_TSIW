@@ -466,6 +466,8 @@ button {
 .fuctions .fuctions_box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-self: center;
     grid-gap: 15px;
     width: 95%;
 }
