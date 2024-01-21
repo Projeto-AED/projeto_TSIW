@@ -53,93 +53,48 @@
 
 
 
-@media only screen and (max-width: 1024px) {
-    .navbar {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        justify-content: space-between;
-    }
-    .logo {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
-        padding: 15px;
-        text-align: center;
-        z-index: 1;
-
-    }
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        margin-top: 10px; 
+@media (max-width: 940px) {
+    .navbar .nav-links {
+      display: none;
     }
 
-    .nav-links li {
-        margin: 10px 0;
+    .navbar .nav-links_mobile {
+      display: block;
     }
 
-    .nav-links a {
-        color: white;
+    .navbar #click:checked ~ .nav-links_mobile {
+      left: 0;
     }
 
-    .nav_icon {
-        font-size: 30px; 
+    .navbar ul {
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      background-color: #000;
+      height: 100vh;
+      width: 100%;
+      display: block;
+      text-align: center;
+      transition: all 0.5s ease;
     }
 
-    .nav-links_mobile {
-        display: flex;
-        justify-content: center; 
-        align-items: center;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        background-color: rgba(0, 0, 0, 0.8);
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        z-index: 1;
-        width: 100%;
-        margin-top: 5px;
-
+    .navbar #click:checked ~ ul {
+      left: 0;
     }
 
-    .nav-links_mobile li {
-        margin: 0;
+    .navbar ul li {
+      margin: 20px 0;
     }
 
-    .nav-links_mobile a {
-        color: white;
+    .navbar ul li a {
+      font-size: 20px;
+      display: block;
+      font-weight: 600;
+      color: #fff; /* Set the text color for better visibility */
+      text-decoration: none;
     }
 
-    #nav-toggle {
-        display: none; 
+    .navbar ul li a:hover {
+      color: #000;
     }
-
-    #nav-toggle-label {
-        cursor: pointer;
-        color: white;
-        margin-top: 10px;
-        display: block;
-        position: fixed; 
-        top: 10px;
-        right: 10px;
-        font-size: 30px; 
-    }
-
-    #nav-toggle:checked + .nav-links,
-    #nav-toggle:checked + .nav-links_mobile {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
+  }
