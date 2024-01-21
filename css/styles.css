@@ -135,6 +135,7 @@ body {
     color: #fff;
     text-align: center;
     margin-bottom: 20px;
+    
 }
 
 .filme-carousel {
@@ -452,7 +453,8 @@ button {
 
 .fuctions h1 {
     font-size: 35px;
-    left: 10px;
+    margin-left: 55px;
+    margin-bottom: 40px;
 }
 
 .fuctions .fuctions_box {
@@ -463,8 +465,8 @@ button {
 }
 
 .fuctions .fuctions_box .fuctions_card {
-    width: 410px;
-    height: 180px;
+    width: 420px;
+    height: 200px;
     text-align: center;
     padding: 5px;
     border: 1px solid gray;
@@ -480,12 +482,14 @@ button {
 }
 
 .fuctions .fuctions_box .fuctions_card i {
-    font-size: 60px;
+    font-size: 50px;
     margin-top: 50px;
 }
 
 .fuctions .fuctions_box .fuctions_card h3 {
-    margin-top: 30px;
+    margin-top: 40px;
+    font-size: 25px;
+    margin-left: 10px;
 }
 
 .fuctions .fuctions_box .fuctions_card .card_h3 {
