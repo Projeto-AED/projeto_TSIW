@@ -439,7 +439,7 @@ button {
 
 .movies-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
 
 }
 
@@ -610,6 +610,10 @@ button {
 @media (max-width: 574px) {
     .footer-col {
         width: 100%;
+    }
+
+    .movies-list{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 .hidden{
