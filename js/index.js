@@ -22,21 +22,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-// Navbar Animation
-const navbar = document.querySelector('.navbar');
-let prevScrollPos = window.pageYOffset;
-
-window.addEventListener('scroll', () => {
-    const currentScrollPos = window.pageYOffset;
-
-    if (prevScrollPos > currentScrollPos) {
-        navbar.style.top = '0';
-    } else {
-        navbar.style.top = '-80px';
-    }
-
-    prevScrollPos = currentScrollPos;
-});
 
 // Image Gallery Lightbox
 const galleryImages = document.querySelectorAll('.gallery-image');
