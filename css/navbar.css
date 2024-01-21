@@ -1,12 +1,11 @@
 .navbar {
-    font-family: 'IBM Plex Mono', monospace, 'Inter', sans-serif, 'Playfair Display', serif;
-    background-color: #9B5CCC;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    margin-bottom: 1%;
+  font-family: 'IBM Plex Mono', monospace, 'Inter', sans-serif, 'Playfair Display', serif;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-bottom: 1%;
 }
 .nav_icon {
   font-size: 18px; 
@@ -51,38 +50,45 @@
   color: #fecb00; 
 }
 
-
+@media only screen and (min-width: 1024px) {
+  .navbar{
+      background-color: #9B5CCC; 
+  }
+    
+}
 
 @media only screen and (max-width: 1024px) {
-    .navbar {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        justify-content: space-between;
-    }
-    .logo {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
-        padding: 15px;
-        text-align: center;
-        z-index: 1;
+  .navbar {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      justify-content: space-between;
+      z-index: 1;
 
-    }
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        margin-top: 10px; 
-    }
+  }
+  .logo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #9B5CCC;
+      padding: 15px;
+      text-align: center;
+      z-index: 1;
+
+  }
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      background-color: #9B5CCC;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      margin-top: 10px; 
+  }
 
   .nav-links li {
       margin: 10px 0;
@@ -96,20 +102,20 @@
       font-size: 30px; 
   }
 
-    .nav-links_mobile {
-        display: flex;
-        justify-content: center; 
-        align-items: center;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        background-color: rgba(0, 0, 0, 0.8);
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        z-index: 1;
-        width: 100%;
-        margin-top: 5px;
+  .nav-links_mobile {
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background-color: #9B5CCC;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      margin-top: 5px;
 
   }
 
