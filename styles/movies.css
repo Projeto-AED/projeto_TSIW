@@ -77,10 +77,21 @@
 
 #searchInput {
     padding: 10px;
-    width: 200px;
-    border: 1px solid #ccc;
+    border: 1px solid #9B5CCC;
     border-radius: 5px;
+    margin-right: 10px;
+    flex-grow: 1;
 }
+
+#searchInput::placeholder {
+    color: #9B5CCC;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: #7452A6;
+}
+
 
 button {
     padding: 10px;
@@ -121,5 +132,33 @@ select {
 @media only screen and (max-width: 576px) {
     .movies-list {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 1024px) {
+    .search-container,
+    .filter-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #searchInput {
+        margin-top: 100px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .filter-container {
+        margin-left: 0;
+    }
+
+    .filter-container button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 574px) {
+    #searchInput {
+        width: 100%;
     }
 }
