@@ -138,6 +138,10 @@ body {
     
 }
 
+.prox_estreias_header{
+    margin-left: 55px;
+}
+
 .filme-carousel {
     overflow: hidden;
 }
