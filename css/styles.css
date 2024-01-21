@@ -135,6 +135,11 @@ body {
     color: #fff;
     text-align: center;
     margin-bottom: 20px;
+    
+}
+
+.prox_estreias_header{
+    margin-left: 55px;
 }
 
 .filme-carousel {
@@ -434,7 +439,7 @@ button {
 
 .movies-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
 
 }
 
@@ -452,19 +457,24 @@ button {
 
 .fuctions h1 {
     font-size: 35px;
-    left: 10px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
 }
 
 .fuctions .fuctions_box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-self: center;
     grid-gap: 15px;
     width: 95%;
 }
 
 .fuctions .fuctions_box .fuctions_card {
-    width: 410px;
-    height: 180px;
+    width: 420px;
+    height: 200px;
     text-align: center;
     padding: 5px;
     border: 1px solid gray;
@@ -480,12 +490,14 @@ button {
 }
 
 .fuctions .fuctions_box .fuctions_card i {
-    font-size: 60px;
+    font-size: 50px;
     margin-top: 50px;
 }
 
 .fuctions .fuctions_box .fuctions_card h3 {
-    margin-top: 30px;
+    margin-top: 40px;
+    font-size: 25px;
+    margin-left: 10px;
 }
 
 .fuctions .fuctions_box .fuctions_card .card_h3 {
@@ -604,6 +616,10 @@ button {
 @media (max-width: 574px) {
     .footer-col {
         width: 100%;
+    }
+
+    .movies-list{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 .hidden{
