@@ -24,49 +24,63 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 document.addEventListener('DOMContentLoaded', function () {
-  const stars = document.querySelectorAll('.star');
-  const ratingText = document.getElementById('selected-rating');
+    const stars = document.querySelectorAll('.star');
+    const ratingText = document.getElementById('selected-rating');
+    const reviewForm = document.getElementById('review-form');
 
-  // Avaliação padrão inicial (por exemplo, 3 estrelas)
-  let userRating = 0;
+    // Default initial rating (e.g., 3 stars)
+    let userRating = 0;
 
-  // Destacar estrelas conforme avaliação padrão
-  highlightStars(userRating);
-  ratingText.textContent = `Você avaliou com ${userRating} estrelas.`;
+    // Highlight stars according to the default rating
+    highlightStars(userRating);
+    ratingText.textContent = `Você avaliou com ${userRating} estrelas.`;
 
-  stars.forEach(star => {
-      star.addEventListener('click', function () {
-          const ratingValue = this.getAttribute('data-value');
-          userRating = ratingValue;
-          ratingText.textContent = `Você avaliou com ${userRating} estrelas.`;
-          resetStars();
-          highlightStars(userRating);
-      });
+    stars.forEach(star => {
+        star.addEventListener('click', function () {
+            const ratingValue = this.getAttribute('data-value');
+            userRating = ratingValue;
+            ratingText.textContent = `Você avaliou com ${userRating} estrelas.`;
+            resetStars();
+            highlightStars(userRating);
 
-      star.addEventListener('mouseover', function () {
-          const ratingValue = this.getAttribute('data-value');
-          highlightStars(ratingValue);
-      });
+            // Show the review form when a star is clicked
+            reviewForm.style.display = 'block';
+        });
 
-      star.addEventListener('mouseout', function () {
-          resetStars();
-          highlightStars(userRating); // Manter destaque na avaliação do usuário
-      });
-  });
+        star.addEventListener('mouseover', function () {
+            const ratingValue = this.getAttribute('data-value');
+            highlightStars(ratingValue);
+        });
 
-  function highlightStars(value) {
-      stars.forEach(star => {
-          if (star.getAttribute('data-value') <= value) {
-              star.style.color = '#ffd700';
-          }
-      });
-  }
+        star.addEventListener('mouseout', function () {
+            resetStars();
+            highlightStars(userRating); // Keep highlighting the user's rating
+        });
+    });
 
-  function resetStars() {
-      stars.forEach(star => {
-          star.style.color = '#ccc';
-      });
-  }
+    // Submit button click event
+    const submitBtn = document.getElementById('submit-review-btn');
+    submitBtn.addEventListener('click', function () {
+        const titleInput = document.getElementById('review-title').value;
+        const reviewInput = document.getElementById('review-text').value;
+
+        // Add logic to handle the submission of the review (e.g., send to server, update UI)
+        console.log(`Title: ${titleInput}, Review: ${reviewInput}, Rating: ${userRating}`);
+        alert("Critica enviada com sucesso")
+    });
+
+    function highlightStars(value) {
+        stars.forEach(star => {
+            if (star.getAttribute('data-value') <= value) {
+                star.style.color = '#ffd700';
+            }
+        });
+    }
+
+    function resetStars() {
+        stars.forEach(star => {
+            star.style.color = '#ccc';
+        });
+    }
 });
-
 
